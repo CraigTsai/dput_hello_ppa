@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 01 May 2023 08:57:43 -0700
+Source: hello
+Architecture: source
+Version: 2.10-3craigtsai3
+Distribution: focal
+Urgency: medium
+Maintainer: Santiago Vila <sanvila@debian.org>
+Changed-By: Craig Tsai <jiazhe@gmail.com>
+Changes:
+ hello (2.10-3craigtsai3) focal; urgency=medium
+ .
+   * add echo in postinst
+Checksums-Sha1:
+ d2fefc9cd966c65d858ec5b6385934d6e5c3f248 1932 hello_2.10-3craigtsai3.dsc
+ e74e4f747b3048e73c2a4b206afb8eab1aeb9b8f 12984 hello_2.10-3craigtsai3.debian.tar.xz
+ baa42036c0ea124179a88ce2fbcb6c86f33565d2 6272 hello_2.10-3craigtsai3_source.buildinfo
+Checksums-Sha256:
+ bcd237f5d7fa2586fb10eee85f7163ab4f7b3be234492339123d1fc8cb76a5ff 1932 hello_2.10-3craigtsai3.dsc
+ d13808cfe4b018a68ad6e9d3d1329054242cdcb2caa577cdbcdf48f07372d663 12984 hello_2.10-3craigtsai3.debian.tar.xz
+ a44e453f83d50bca9bf69f42024581e1874e0f6fed573863a837371ae0e45946 6272 hello_2.10-3craigtsai3_source.buildinfo
+Files:
+ 08b614c33452c3fa7d897cd044a2b322 1932 devel optional hello_2.10-3craigtsai3.dsc
+ 719f855761a26059b220113a2a631350 12984 devel optional hello_2.10-3craigtsai3.debian.tar.xz
+ 6becdde312b7a691296e28eb6721b160 6272 devel optional hello_2.10-3craigtsai3_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEQ3lGvOn4QiFlkfN7BJiX4ng2kWQFAmRP4fQACgkQBJiX4ng2
+kWRXbwv/arhHSEGFxdiVy8Fy543EeKkejnM1RHF5Yca/fW6luXjgkD1ljL+ONcLF
+SOaK/W5VeSKpCPVegnWUrKfbrl/TiL4aRRrt63TRnu8llwuN1unH/cKoHOxDL3LF
+LMiM2Py84H5VWYe9Es7VWna9jBxWdHrETYDRXiY68SfHK32rgBcFyo6MyRCocSP0
+fM+wclZLovM4CDnL9oiSIDOtkHx6Yh7vW418WtSCSgCMEin010AZnr3TxViI1LZ/
+MaerPu2WNnH9XMP2snk0cd+PpJP6Tal7G3936hYGYYnSSg4eFw8DdaDcHOtG7H6D
+4NquLK1UA+Yacf4A56tcZCS/ezVI6LMCmaxM3KBiSLipF3dz5LK7199JPuZZCUQ5
+cm2lPiVzVNwGtVXxFeat7YYkKyG/ROxaGZyjt2JDj/0NCMzNZnwNnfoysuIARWZE
+pmFKvfZPf1DEAwIgLrOsnOXr2GPf7kzPlztOvw8lPUQ4lAbYziZNd5Jj7FM9NThV
+zzy0AaQm
+=Xj0F
+-----END PGP SIGNATURE-----

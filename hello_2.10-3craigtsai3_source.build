@@ -1,0 +1,40 @@
+ dpkg-buildpackage -us -uc -ui -S
+dpkg-buildpackage: info: source package hello
+dpkg-buildpackage: info: source version 2.10-3craigtsai3
+dpkg-buildpackage: info: source distribution focal
+dpkg-buildpackage: info: source changed by Craig Tsai <jiazhe@gmail.com>
+ dpkg-source --before-build .
+ debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/craig/workspace/repack/hello-2.10'
+[ ! -f Makefile ] || /usr/bin/make distclean
+make[1]: Leaving directory '/home/craig/workspace/repack/hello-2.10'
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building hello using existing ./hello_2.10.orig.tar.gz
+dpkg-source: info: building hello using existing ./hello_2.10.orig.tar.gz.asc
+dpkg-source: info: building hello in hello_2.10-3craigtsai3.debian.tar.xz
+dpkg-source: info: building hello in hello_2.10-3craigtsai3.dsc
+ dpkg-genbuildinfo --build=source
+ dpkg-genchanges --build=source >../hello_2.10-3craigtsai3_source.changes
+dpkg-genchanges: info: not including original source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary and diff upload (original source NOT included)
+Now running lintian hello_2.10-3craigtsai3_source.changes ...
+W: hello source: maintainer-script-lacks-debhelper-token debian/postinst
+W: hello source: newer-standards-version 4.6.2 (current is 4.5.0)
+Finished running lintian.
+Now signing changes and any dsc files...
+long key IDs are discouraged; please use key fingerprints instead
+ signfile dsc hello_2.10-3craigtsai3.dsc 049897E278369164
+
+ fixup_buildinfo hello_2.10-3craigtsai3.dsc hello_2.10-3craigtsai3_source.buildinfo
+ signfile buildinfo hello_2.10-3craigtsai3_source.buildinfo 049897E278369164
+
+ fixup_changes dsc hello_2.10-3craigtsai3.dsc hello_2.10-3craigtsai3_source.changes
+ fixup_changes buildinfo hello_2.10-3craigtsai3_source.buildinfo hello_2.10-3craigtsai3_source.changes
+ signfile changes hello_2.10-3craigtsai3_source.changes 049897E278369164
+
+Successfully signed dsc, buildinfo, changes files
